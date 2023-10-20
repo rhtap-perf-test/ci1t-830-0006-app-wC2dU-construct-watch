@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cdgo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0006-tenant/ci1t-830-0006-app/devfile-sample-cdgo@sha256:7973b7fdc2630dca24554a5bfc74b998cee77467bea5326c6eed7593bd1ec7ff
+        name: my-nodejs
+        resources: {}
+status: {}
